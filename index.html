@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfraSightOps | Linux Infrastructure Monitoring &amp; Governance</title>
+    <meta name="description" content="InfraSightOps is an enterprise Linux infrastructure monitoring and governance platform for centralized server management, diagnostics, security and automation.">
+    <meta name="keywords" content="InfraSightOps, Linux infrastructure monitoring, Linux server governance, Linux health check, Linux fleet management, zero-agent Linux monitoring, Linux drift detection, Linux compliance audit, server diagnostics, infrastructure automation">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.infrasightops.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.infrasightops.com/">
+    <meta property="og:site_name" content="InfraSightOps">
+    <meta property="og:title" content="InfraSightOps | Linux Infrastructure Monitoring &amp; Governance">
+    <meta property="og:description" content="InfraSightOps is an enterprise Linux infrastructure monitoring and governance platform for centralized server management, diagnostics, security and automation.">
+    <meta property="og:image" content="https://www.infrasightops.com/favicon-64.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.infrasightops.com/">
+    <meta name="twitter:title" content="InfraSightOps | Linux Infrastructure Monitoring &amp; Governance">
+    <meta name="twitter:description" content="InfraSightOps is an enterprise Linux infrastructure monitoring and governance platform for centralized server management, diagnostics, security and automation.">
+    <meta name="twitter:image" content="https://www.infrasightops.com/favicon-64.png">
+
+    <!-- Schema.org JSON-LD Structured Data for Google Search -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "InfraSightOps",
+      "url": "https://www.infrasightops.com/",
+      "operatingSystem": "Linux",
+      "applicationCategory": "DevOpsApplication",
+      "description": "InfraSightOps is an enterprise Linux infrastructure monitoring and governance platform for centralized server management, diagnostics, security and automation.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=11">
+    <link rel="alternate icon" type="image/svg+xml" href="/favicon.svg?v=11">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=11">
+    <link rel="icon" type="image/png" sizes="64x64" href="favicon-64.png?v=11">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Ambient Glow Effects -->
+    <div class="ambient-glow-1"></div>
+    <div class="ambient-glow-2"></div>
+
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                <img src="favicon.svg?v=11" alt="InfraSightOps Logo" class="brand-img" width="38" height="38">
+                <span>Infra<span style="color:#F43F5E;">SightOps</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#why-needed">Why InfraSightOps?</a></li>
+                <li><a href="#demo" style="color:#60A5FA;font-weight:600;"><i data-lucide="play-circle" style="width:14px;height:14px;display:inline-block;vertical-align:-2px;"></i> Demo</a></li>
+                <li><a href="#security">Enterprise Security</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#supported-os">Platforms</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <a href="downloads/infrasightops-installer.run" download="infrasightops-installer.run" class="btn btn-primary">
+                <i data-lucide="download" style="width:16px;height:16px;"></i> Download (.run)
+            </a>
+            <button class="mobile-nav-toggle" onclick="toggleMobileNav()" aria-label="Toggle Navigation Menu">
+                <i data-lucide="menu" style="width:20px;height:20px;"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="badge-pill">
+                <i data-lucide="shield-check" style="width:14px;height:14px;"></i>
+                InfraSightOps Enterprise &nbsp;•&nbsp; Multi-Project Fleet Governance &nbsp;•&nbsp; 100% Air-Gapped Ready
+            </div>
+
+            <h1 class="hero-title">
+                Centralized Linux Infrastructure <span>Operations &amp; Automation Platform</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Automate, diagnose, orchestrate and govern your Linux server fleet across hybrid, on-premises and air-gapped environments.
+            </p>
+
+            <p class="hero-subtitle" style="margin-top:-14px;font-weight:600;color:var(--text-main);">
+                Monitor &nbsp;•&nbsp; Diagnose &nbsp;•&nbsp; Automate &nbsp;•&nbsp; Orchestrate &nbsp;•&nbsp; Govern
+            </p>
+
+            <div class="hero-ctas">
+                <a href="#demo" class="btn btn-primary superdemo-trigger" onclick="launchSuperdemo(event)" style="background:linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);box-shadow:0 4px 20px rgba(37,99,235,0.5);">
+                    <i data-lucide="play-circle" style="width:18px;height:18px;"></i> ▶ Interactive Demo
+                </a>
+                <a href="#features" class="btn btn-outline">
+                    <i data-lucide="compass" style="width:18px;height:18px;"></i> Explore InfraSightOps
+                </a>
+                <a href="downloads/infrasightops-installer.run" download="infrasightops-installer.run" class="btn btn-outline" style="border-color:rgba(244,63,94,0.4);color:#FB7185;">
+                    <i data-lucide="download" style="width:18px;height:18px;"></i> Download Master Installer (.run)
+                </a>
+            </div>
+
+            <!-- Stats Row -->
+            <div style="display:flex;gap:32px;justify-content:center;flex-wrap:wrap;margin:36px 0 28px 0;">
+                <div style="text-align:center;">
+                    <div style="font-size:1.8rem;font-weight:800;color:#60A5FA;">10+</div>
+                    <div style="font-size:0.8rem;color:var(--text-muted);font-weight:600;text-transform:uppercase;">OS Distributions</div>
+                </div>
+                <div style="text-align:center;">
+                    <div style="font-size:1.8rem;font-weight:800;color:#34D399;">33+</div>
+                    <div style="font-size:0.8rem;color:var(--text-muted);font-weight:600;text-transform:uppercase;">Diagnostic Checks</div>
+                </div>
+                <div style="text-align:center;">
+                    <div style="font-size:1.8rem;font-weight:800;color:#F59E0B;">Zero</div>
+                    <div style="font-size:0.8rem;color:var(--text-muted);font-weight:600;text-transform:uppercase;">Dependencies</div>
+                </div>
+                <div style="text-align:center;">
+                    <div style="font-size:1.8rem;font-weight:800;color:#C084FC;">0%</div>
+                    <div style="font-size:0.8rem;color:var(--text-muted);font-weight:600;text-transform:uppercase;">Idle RAM Overhead</div>
+                </div>
+                <div style="text-align:center;">
+                    <div style="font-size:1.8rem;font-weight:800;color:#F43F5E;">100%</div>
+                    <div style="font-size:0.8rem;color:var(--text-muted);font-weight:600;text-transform:uppercase;">Air-Gap &amp; Offline</div>
+                </div>
+            </div>
+
+            <!-- Terminal Mockup Window -->
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <div class="dot dot-red"></div>
+                        <div class="dot dot-yellow"></div>
+                        <div class="dot dot-green"></div>
+                    </div>
+                    <div class="terminal-title">root@master-server:~ — infrasightops-installer.run</div>
+                    <i data-lucide="code" style="width:14px;height:14px;color:var(--text-dim);"></i>
+                </div>
+                <div class="terminal-body">
+                    <div><span class="prompt">root@master-server:~#</span> <span class="command">chmod +x infrasightops-installer.run &amp;&amp; sudo ./infrasightops-installer.run</span></div>
+                    <div class="output-info">[INFO] Extracting InfraSightOps Enterprise Installer Package...</div>
+                    <div class="output-info">[INFO] Detecting OS: Red Hat Enterprise Linux 8.10 (Ootpa)...</div>
+                    <div class="output-info">[INFO] Setting up Python venv &amp; Gunicorn at /opt/infrasightops...</div>
+                    <div class="output-info">[INFO] Configuring Nginx reverse proxy (catch-all domain + direct IP)...</div>
+                    <div class="output-info">[INFO] Initializing Remote SSH Executor &amp; Multi-Server Orchestrator...</div>
+                    <div class="output-info">[INFO] Activating commercial license — Enterprise Edition (250 Hosts)...</div>
+                    <div class="output-success">[SUCCESS] InfraSightOps Master Application Server deployed in 3.1s!</div>
+                    <div class="output-success">► Web UI: http://10.0.27.53:8088 &nbsp;|&nbsp; Secure: https://health.acmecorp.com</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- =============================================================================
+         Interactive Product Demo Section (Unified On-Demand Supademo Player)
+         ============================================================================= -->
+    <section id="demo" class="section" style="padding-top: 50px; padding-bottom: 50px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" style="background:rgba(96,165,250,0.15);color:#60A5FA;border-color:rgba(96,165,250,0.3);">
+                    <i data-lucide="play-circle" style="width:14px;height:14px;display:inline-block;vertical-align:-2px;"></i> Live Interactive Walkthrough
+                </span>
+                <h2 class="section-title">Experience InfraSightOps in Action</h2>
+                <p class="section-desc">Test the live platform in your browser — explore drift tracking, multi-server orchestration, and automated health audits.</p>
+            </div>
+
+            <!-- 1. Interactive Demo Teaser Launcher Card -->
+            <div id="demo-launcher" class="demo-launcher-card" style="text-align:center;">
+                <div style="width:68px;height:68px;border-radius:50%;background:rgba(37,99,235,0.2);color:#60A5FA;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;border:1px solid rgba(59,130,246,0.4);box-shadow:0 0 25px rgba(37,99,235,0.4);">
+                    <i data-lucide="play" style="width:28px;height:28px;margin-left:3px;"></i>
+                </div>
+                <h3 style="color:#F8FAFC;font-size:1.35rem;font-weight:700;margin-bottom:12px;">Interactive Product Tour</h3>
+                <p style="color:var(--text-muted);font-size:0.95rem;max-width:580px;margin:0 auto 24px;line-height:1.6;">
+                    Explore multi-project dashboards, automated execution pipelines, drift comparison, and credential vaults live.
+                </p>
+                <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:28px;">
+                    <span style="background:rgba(30,41,59,0.8);border:1px solid var(--border-glass);padding:5px 12px;border-radius:20px;font-size:0.8rem;color:#94A3B8;">✔ Multi-Server Orchestrator</span>
+                    <span style="background:rgba(30,41,59,0.8);border:1px solid var(--border-glass);padding:5px 12px;border-radius:20px;font-size:0.8rem;color:#94A3B8;">✔ 25+ Automation Workflows</span>
+                    <span style="background:rgba(30,41,59,0.8);border:1px solid var(--border-glass);padding:5px 12px;border-radius:20px;font-size:0.8rem;color:#94A3B8;">✔ Side-by-Side Drift Matrix</span>
+                    <span style="background:rgba(30,41,59,0.8);border:1px solid var(--border-glass);padding:5px 12px;border-radius:20px;font-size:0.8rem;color:#94A3B8;">✔ Server Facts &amp; Templates</span>
+                    <span style="background:rgba(30,41,59,0.8);border:1px solid var(--border-glass);padding:5px 12px;border-radius:20px;font-size:0.8rem;color:#94A3B8;">✔ Encrypted Credential Vault</span>
+                    <span style="background:rgba(30,41,59,0.8);border:1px solid var(--border-glass);padding:5px 12px;border-radius:20px;font-size:0.8rem;color:#94A3B8;">✔ Web SSH Terminal</span>
+                </div>
+                <button type="button" class="btn btn-primary superdemo-trigger" onclick="launchSuperdemo(event)" style="font-size:1.05rem;padding:14px 36px;background:linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);box-shadow:0 4px 25px rgba(37,99,235,0.6);">
+                    <i data-lucide="play-circle" style="width:20px;height:20px;"></i> ▶ Launch Interactive Demo
+                </button>
+            </div>
+
+            <!-- 2. On-Demand Embedded Player Container with Loading Skeleton & Fallback -->
+            <div id="demo-player" class="demo-player-container">
+                <div style="display:flex;align-items:center;justify-content:space-between;padding:6px 14px 12px;border-bottom:1px solid rgba(255,255,255,0.06);margin-bottom:12px;flex-wrap:wrap;gap:8px;">
+                    <div style="display:flex;align-items:center;gap:8px;">
+                        <span style="width:11px;height:11px;border-radius:50%;background:#EF4444;display:inline-block;"></span>
+                        <span style="width:11px;height:11px;border-radius:50%;background:#F59E0B;display:inline-block;"></span>
+                        <span style="width:11px;height:11px;border-radius:50%;background:#10B981;display:inline-block;"></span>
+                        <span style="font-family:var(--font-mono);font-size:0.82rem;color:var(--text-muted);margin-left:8px;">InfraSightOps Enterprise — Interactive Guided Tour</span>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+                        <button type="button" onclick="reloadSuperdemo(event)" style="background:rgba(255,255,255,0.08);border:1px solid var(--border-glass);color:var(--text-muted);padding:4px 10px;border-radius:6px;font-size:0.8rem;cursor:pointer;display:inline-flex;align-items:center;gap:4px;">
+                            <i data-lucide="rotate-cw" style="width:12px;height:12px;"></i> Reload
+                        </button>
+                        <a href="https://app.supademo.com/demo/cmt9seajv0pwsqmeblrkxbgje?utm_source=link" target="_blank" rel="noopener noreferrer" style="color:#60A5FA;font-size:0.82rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:5px;background:rgba(37,99,235,0.15);border:1px solid rgba(96,165,250,0.3);padding:4px 12px;border-radius:6px;">
+                            <span>Open Fullscreen</span> <i data-lucide="external-link" style="width:12px;height:12px;"></i>
+                        </a>
+                        <button type="button" onclick="closeSuperdemo(event)" style="background:rgba(239,68,68,0.15);border:1px solid rgba(239,68,68,0.3);color:#F87171;padding:4px 10px;border-radius:6px;font-size:0.8rem;cursor:pointer;display:inline-flex;align-items:center;gap:4px;">
+                            <i data-lucide="x" style="width:12px;height:12px;"></i> Close
+                        </button>
+                    </div>
+                </div>
+
+                <div style="position:relative;box-sizing:content-box;max-height:80vh;max-height:80svh;width:100%;aspect-ratio:2880/1530;padding:0;border-radius:12px;overflow:hidden;background:#0A0E17;box-shadow:inset 0 0 20px rgba(0,0,0,0.5);">
+                    <!-- Skeleton Loader -->
+                    <div id="demo-loader" class="demo-loader-skeleton">
+                        <div class="demo-spinner"></div>
+                        <div style="color:#94A3B8;font-size:0.92rem;font-weight:500;">Loading interactive product demo...</div>
+                        <div style="font-size:0.8rem;color:#64748B;">If it doesn't load due to an ad-blocker, <a href="https://app.supademo.com/demo/cmt9seajv0pwsqmeblrkxbgje" target="_blank" rel="noopener noreferrer" style="color:#60A5FA;text-decoration:underline;">click here to open directly</a>.</div>
+                    </div>
+                    <!-- Iframe Player (src injected on-demand) -->
+                    <iframe id="superdemo-iframe" src="about:blank" title="Comprehensive Linux Server Management and Compliance Auditing" allow="clipboard-write" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:12px;"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Needed / Problem vs Solution Section -->
+    <section id="why-needed" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Why InfraSightOps?</span>
+                <h2 class="section-title">Built to Solve Enterprise Infrastructure Friction</h2>
+                <p class="section-desc">Eliminate agent bloat, per-node monthly fees, and manual SSH diagnostics with zero-idle-RAM orchestration.</p>
+            </div>
+
+            <div class="grid-2">
+                <!-- Problem Card -->
+                <div class="compare-card problem">
+                    <span class="card-badge badge-problem">❌ Traditional SaaS / Heavy Agents</span>
+                    <h3>High Overhead &amp; Operational Friction</h3>
+                    <ul class="compare-list">
+                        <li>
+                            <i data-lucide="x-circle" style="color:#EF4444;width:18px;height:18px;flex-shrink:0;"></i>
+                            <span><strong>Manual SSH Diagnostics:</strong> Logging into individual servers and collecting scattered logs wastes critical incident hours.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="x-circle" style="color:#EF4444;width:18px;height:18px;flex-shrink:0;"></i>
+                            <span><strong>Heavy Persistent Daemons:</strong> Background agents consume 200MB+ RAM and continuous CPU cycles 24/7 on every node.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="x-circle" style="color:#EF4444;width:18px;height:18px;flex-shrink:0;"></i>
+                            <span><strong>Air-Gap Incompatibility:</strong> SaaS tools fail without outbound internet access and continuous cloud API connectivity.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="x-circle" style="color:#EF4444;width:18px;height:18px;flex-shrink:0;"></i>
+                            <span><strong>Runaway Per-Node Pricing:</strong> Monthly fees ($10–$30/server/month) multiply exponentially across growing fleets.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="x-circle" style="color:#EF4444;width:18px;height:18px;flex-shrink:0;"></i>
+                            <span><strong>Blind to Infrastructure Drift:</strong> Point-in-time metrics offer no side-by-side diff matrix across maintenance windows.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Solution Card -->
+                <div class="compare-card solution">
+                    <span class="card-badge badge-solution">✅ InfraSightOps Enterprise</span>
+                    <h3>Zero Friction &amp; Centralized Control</h3>
+                    <ul class="compare-list">
+                        <li>
+                            <i data-lucide="check-circle-2" style="color:#10B981;width:18px;height:18px;flex-shrink:0;"></i>
+                            <span><strong>Browser Orchestrator &amp; SSH Push:</strong> Run rolling serial or parallel pipelines across fleets with pre/post-check validation.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check-circle-2" style="color:#10B981;width:18px;height:18px;flex-shrink:0;"></i>
+                            <span><strong>0% Idle RAM Overhead:</strong> On-demand execution binary exits immediately after scanning—zero idle resource footprint.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check-circle-2" style="color:#10B981;width:18px;height:18px;flex-shrink:0;"></i>
+                            <span><strong>100% Air-Gapped Ready:</strong> Cryptographic HMAC validation operates fully offline with zero cloud phone-home pings.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check-circle-2" style="color:#10B981;width:18px;height:18px;flex-shrink:0;"></i>
+                            <span><strong>Visual Before vs. After Drift:</strong> Side-by-side comparison across hardware, kernel, network, packages, and services.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check-circle-2" style="color:#10B981;width:18px;height:18px;flex-shrink:0;"></i>
+                            <span><strong>Predictable Flat Licensing:</strong> One transparent annual license covers your entire cluster with no per-node penalties.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ONE Strong Differentiator & Comparison Matrix -->
+            <div style="margin-top:48px;background:linear-gradient(145deg, rgba(15,23,42,0.85), rgba(30,41,59,0.5));border:1px solid rgba(244,63,94,0.3);border-radius:20px;padding:36px 32px;box-shadow:0 12px 40px rgba(0,0,0,0.4);">
+                
+                <!-- Strong Point Banner -->
+                <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px;flex-wrap:wrap;">
+                    <span style="background:rgba(244,63,94,0.15);color:#FB7185;border:1px solid rgba(244,63,94,0.35);padding:6px 14px;border-radius:20px;font-size:0.82rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;display:inline-flex;align-items:center;gap:6px;">
+                        <i data-lucide="zap" style="width:15px;height:15px;"></i> The #1 Core Advantage
+                    </span>
+                    <h3 style="color:#F8FAFC;font-size:1.45rem;font-weight:800;margin:0;">
+                        Why Choose InfraSightOps Over Ansible &amp; Traditional Monitoring?
+                    </h3>
+                </div>
+
+                <p style="color:#CBD5E1;font-size:1.02rem;line-height:1.75;margin-bottom:28px;">
+                    <strong>The Unified Advantage:</strong> Ansible automates tasks but lacks visual health audits and drift tracking. Traditional SaaS monitors graph metrics but drain server RAM and cannot execute maintenance commands. 
+                    <span style="color:#60A5FA;font-weight:600;">InfraSightOps unifies both: full multi-server orchestration and comprehensive 31-category health audits in one zero-agent, air-gapped web platform—no YAML, no heavy daemons, and no per-node fees.</span>
+                </p>
+
+                <!-- Comparison Table -->
+                <div style="overflow-x:auto;">
+                    <table style="width:100%;border-collapse:separate;border-spacing:0;font-size:0.9rem;text-align:left;border-radius:12px;overflow:hidden;border:1px solid var(--border-glass);">
+                        <thead>
+                            <tr style="background:rgba(15,23,42,0.9);color:#F8FAFC;">
+                                <th style="padding:14px 18px;font-weight:700;border-bottom:1px solid var(--border-glass);width:26%;">Feature &amp; Operational Capability</th>
+                                <th style="padding:14px 18px;font-weight:700;border-bottom:1px solid var(--border-glass);width:24%;color:#94A3B8;">Ansible / SaltStack</th>
+                                <th style="padding:14px 18px;font-weight:700;border-bottom:1px solid var(--border-glass);width:24%;color:#94A3B8;">Legacy Agents (Datadog/Zabbix)</th>
+                                <th style="padding:14px 18px;font-weight:800;border-bottom:1px solid var(--border-glass);width:26%;background:rgba(244,63,94,0.15);color:#FB7185;">InfraSightOps Enterprise</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom:1px solid rgba(255,255,255,0.05);background:rgba(15,23,42,0.4);">
+                                <td style="padding:14px 18px;font-weight:600;color:#F8FAFC;border-bottom:1px solid rgba(255,255,255,0.05);">Client Node Requirements</td>
+                                <td style="padding:14px 18px;color:#94A3B8;border-bottom:1px solid rgba(255,255,255,0.05);">⚠️ Requires Python &amp; SSH key distribution</td>
+                                <td style="padding:14px 18px;color:#EF4444;border-bottom:1px solid rgba(255,255,255,0.05);">❌ Heavy background agent (200MB+ RAM)</td>
+                                <td style="padding:14px 18px;font-weight:700;color:#34D399;background:rgba(244,63,94,0.08);border-bottom:1px solid rgba(255,255,255,0.05);">✔ <strong>Zero Agents, Zero Python (POSIX bash)</strong></td>
+                            </tr>
+                            <tr style="border-bottom:1px solid rgba(255,255,255,0.05);background:rgba(15,23,42,0.2);">
+                                <td style="padding:14px 18px;font-weight:600;color:#F8FAFC;border-bottom:1px solid rgba(255,255,255,0.05);">Change Verification (Pre/Post)</td>
+                                <td style="padding:14px 18px;color:#94A3B8;border-bottom:1px solid rgba(255,255,255,0.05);">⚠️ Manual playbooks; no visual diff matrix</td>
+                                <td style="padding:14px 18px;color:#EF4444;border-bottom:1px solid rgba(255,255,255,0.05);">❌ Point-in-time metrics; no change pipeline</td>
+                                <td style="padding:14px 18px;font-weight:700;color:#34D399;background:rgba(244,63,94,0.08);border-bottom:1px solid rgba(255,255,255,0.05);">✔ <strong>Precheck ➔ Run ➔ Postcheck Diff Matrix</strong></td>
+                            </tr>
+                            <tr style="border-bottom:1px solid rgba(255,255,255,0.05);background:rgba(15,23,42,0.4);">
+                                <td style="padding:14px 18px;font-weight:600;color:#F8FAFC;border-bottom:1px solid rgba(255,255,255,0.05);">Unified Web UI &amp; 1-Click Action</td>
+                                <td style="padding:14px 18px;color:#94A3B8;border-bottom:1px solid rgba(255,255,255,0.05);">❌ CLI-only (or costly AWX/Tower complex setup)</td>
+                                <td style="padding:14px 18px;color:#94A3B8;border-bottom:1px solid rgba(255,255,255,0.05);">⚠️ Read-only charts; cannot run custom scripts</td>
+                                <td style="padding:14px 18px;font-weight:700;color:#34D399;background:rgba(244,63,94,0.08);border-bottom:1px solid rgba(255,255,255,0.05);">✔ <strong>Unified Web UI + Terminal + Orchestrator</strong></td>
+                            </tr>
+                            <tr style="border-bottom:1px solid rgba(255,255,255,0.05);background:rgba(15,23,42,0.2);">
+                                <td style="padding:14px 18px;font-weight:600;color:#F8FAFC;border-bottom:1px solid rgba(255,255,255,0.05);">Offline / Air-Gapped Networks</td>
+                                <td style="padding:14px 18px;color:#94A3B8;border-bottom:1px solid rgba(255,255,255,0.05);">⚠️ Complex offline package repository setup</td>
+                                <td style="padding:14px 18px;color:#EF4444;border-bottom:1px solid rgba(255,255,255,0.05);">❌ Fails (mandatory cloud API phone-home)</td>
+                                <td style="padding:14px 18px;font-weight:700;color:#34D399;background:rgba(244,63,94,0.08);border-bottom:1px solid rgba(255,255,255,0.05);">✔ <strong>100% Air-Gapped Ready (Local HMAC keys)</strong></td>
+                            </tr>
+                            <tr style="background:rgba(15,23,42,0.4);">
+                                <td style="padding:14px 18px;font-weight:600;color:#F8FAFC;">Cost &amp; Licensing Model</td>
+                                <td style="padding:14px 18px;color:#94A3B8;">Open-source CLI or $10,000+ Enterprise Tower</td>
+                                <td style="padding:14px 18px;color:#EF4444;">❌ $15–$30/server/mo ($36,000/yr for 100 VMs)</td>
+                                <td style="padding:14px 18px;font-weight:700;color:#34D399;background:rgba(244,63,94,0.08);">✔ <strong>Flat Annual License — $0 Per-Node Fees</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Showcase -->
+    <section id="features" class="section" style="background: rgba(15, 23, 42, 0.4); border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Platform Capabilities</span>
+                <h2 class="section-title">Designed for Mission-Critical Production Data Centers</h2>
+                <p class="section-desc">Everything sysadmins, DevOps leads, and MSP providers need to audit, orchestrate, secure, and maintain enterprise Linux environments at scale.</p>
+            </div>
+
+            <div class="grid-3">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon"><i data-lucide="layout-dashboard" style="width:26px;height:26px;"></i></div>
+                    <h3 class="feature-title">Centralized Infrastructure Web UI</h3>
+                    <p class="feature-desc">Live unified visibility into CPU, RAM, disks, kernel baselines, services, firewall rules, and security posture across hundreds of servers from one dashboard.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon"><i data-lucide="workflow" style="width:26px;height:26px;"></i></div>
+                    <h3 class="feature-title">Ansible-Like Multi-Server Orchestrator</h3>
+                    <p class="feature-desc">Execute bulk commands and multi-line scripts across fleets with <strong>Parallel</strong> or <strong>Rolling Serial</strong> pipelines, pre/post-check validation, and fail-safe stop on error.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon"><i data-lucide="terminal" style="width:26px;height:26px;"></i></div>
+                    <h3 class="feature-title">Integrated Web SSH Terminal</h3>
+                    <p class="feature-desc">Direct browser SSH terminal to connect to managed nodes, run diagnostic commands, and elevate via sudo without external SSH client software.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon"><i data-lucide="shield-alert" style="width:26px;height:26px;"></i></div>
+                    <h3 class="feature-title">Enterprise Patch &amp; Vulnerability Scoring</h3>
+                    <p class="feature-desc">Automated package analysis calculating a <strong>Patch Compliance Score (%)</strong> with severity penalties for unpatched CVEs, security updates, and required reboots.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="feature-icon"><i data-lucide="cpu" style="width:26px;height:26px;"></i></div>
+                    <h3 class="feature-title">Multi-OS Kernel Advisory Engine</h3>
+                    <p class="feature-desc">Compares active kernels against vendor security baselines across RHEL, Ubuntu LTS, Rocky, Alma, Oracle, Amazon Linux, and SUSE SLES.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card">
+                    <div class="feature-icon"><i data-lucide="git-compare" style="width:26px;height:26px;"></i></div>
+                    <h3 class="feature-title">Before vs. After Infrastructure Drift</h3>
+                    <p class="feature-desc">Side-by-side diff matrix highlighting changes in hardware, kernel, network, DNS, firewall, packages, and system services between any two scan snapshots.</p>
+                </div>
+
+                <!-- Feature 7 -->
+                <div class="feature-card">
+                    <div class="feature-icon"><i data-lucide="key-round" style="width:26px;height:26px;"></i></div>
+                    <h3 class="feature-title">Secure Credential Vault &amp; Governance</h3>
+                    <p class="feature-desc">AES-encrypted storage for SSH passwords and private keys (RSA/ED25519) with automatic host-matching, 1-click dispatch, and strict RBAC boundaries.</p>
+                </div>
+
+                <!-- Feature 8 -->
+                <div class="feature-card">
+                    <div class="feature-icon"><i data-lucide="activity" style="width:26px;height:26px;"></i></div>
+                    <h3 class="feature-title">Pre-Flight Connectivity Engine</h3>
+                    <p class="feature-desc">Automated SSH port 22 probes, latency measurements, and credential verification across selected hosts before triggering orchestration or audits.</p>
+                </div>
+
+                <!-- Feature 9 -->
+                <div class="feature-card">
+                    <div class="feature-icon"><i data-lucide="building-2" style="width:26px;height:26px;"></i></div>
+                    <h3 class="feature-title">Multi-Tenant MSP Architecture</h3>
+                    <p class="feature-desc">Manage multiple client environments from a single Master node with isolated tenant views, custom client branding, white-labeling, and granular RBAC.</p>
+                </div>
+
+                <!-- Feature 10 -->
+                <div class="feature-card">
+                    <div class="feature-icon" style="background:rgba(234,88,12,0.15);border-color:rgba(234,88,12,0.3);color:#FB923C;"><i data-lucide="git-merge" style="width:26px;height:26px;"></i></div>
+                    <h3 class="feature-title">25+ Automation Workflows &amp; Rollback Guards</h3>
+                    <p class="feature-desc">Ready-to-run automation library across 23 operational domains with runtime parameter inputs, pre-flight safety checks, and automatic 5-second rollback watchdogs.</p>
+                </div>
+
+                <!-- Feature 11 -->
+                <div class="feature-card">
+                    <div class="feature-icon" style="background:rgba(16,185,129,0.15);border-color:rgba(16,185,129,0.3);color:#34D399;"><i data-lucide="cpu" style="width:26px;height:26px;"></i></div>
+                    <h3 class="feature-title">Server Inventory &amp; Zero-Agent Facts Telemetry</h3>
+                    <p class="feature-desc">Centralized inventory with dynamic tagging. Deep hardware, kernel, network, and block storage telemetry gathered in seconds without background agents.</p>
+                </div>
+
+                <!-- Feature 12 -->
+                <div class="feature-card">
+                    <div class="feature-icon" style="background:rgba(8,145,178,0.15);border-color:rgba(8,145,178,0.3);color:#22D3EE;"><i data-lucide="file-code" style="width:26px;height:26px;"></i></div>
+                    <h3 class="feature-title">Configuration Templates &amp; Pre-Deploy Diffs</h3>
+                    <p class="feature-desc">Jinja2 configuration templating with unified diff previews and automated syntax pre-validation (e.g. <code>sshd -t</code>, <code>nginx -t</code>) before service reload.</p>
+                </div>
+
+                <!-- Feature 13 -->
+                <div class="feature-card">
+                    <div class="feature-icon" style="background:rgba(139,92,246,0.15);border-color:rgba(139,92,246,0.3);color:#A78BFA;"><i data-lucide="calendar-clock" style="width:26px;height:26px;"></i></div>
+                    <h3 class="feature-title">Enterprise Cron Automation Scheduler</h3>
+                    <p class="feature-desc">Schedule recurring audits and maintenance using 5-part cron syntax with timezone support and automatic user permission revalidation at execution time.</p>
+                </div>
+
+                <!-- Feature 14 -->
+                <div class="feature-card">
+                    <div class="feature-icon" style="background:rgba(217,119,6,0.15);border-color:rgba(217,119,6,0.3);color:#FBBF24;"><i data-lucide="hard-drive" style="width:26px;height:26px;"></i></div>
+                    <h3 class="feature-title">Intelligent LVM &amp; Filesystem Auto-Extend</h3>
+                    <p class="feature-desc">Safely expands Linux storage volumes with auto-detected XFS and EXT4 filesystem handling and Volume Group extent analysis—preventing syntax errors and downtime.</p>
+                </div>
+
+                <!-- Feature 15 -->
+                <div class="feature-card">
+                    <div class="feature-icon" style="background:rgba(59,130,246,0.15);border-color:rgba(59,130,246,0.3);color:#60A5FA;"><i data-lucide="upload-cloud" style="width:26px;height:26px;"></i></div>
+                    <h3 class="feature-title">Multi-Server File Deployment (SHA-256)</h3>
+                    <p class="feature-desc">Distribute binaries, scripts, and certificates across clusters with cryptographic SHA-256 verification, permission enforcement, and optional post-placement execution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- =============================================================================
+         Enterprise Security, Scope & Automation Architecture Section
+         ============================================================================= -->
+    <section id="security" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" style="background:rgba(16,185,129,0.15);color:#34D399;border-color:rgba(16,185,129,0.35);">Enterprise Security &amp; Governance</span>
+                <h2 class="section-title">Multi-Project Scoping &amp; Environment-Aware Security</h2>
+                <p class="section-desc">
+                    Comprehensive multi-client isolation, environment-aware execution guardrails, and backend-enforced data boundaries designed for defense-in-depth infrastructure operations.
+                </p>
+            </div>
+
+            <!-- Deep Dive 2-Column Grid -->
+            <div class="grid-2" style="margin-bottom:48px;">
+                <!-- Card 1: Multi-Client & Project Scope -->
+                <div class="feature-card" style="background:rgba(15,23,42,0.6);border:1px solid rgba(255,255,255,0.08);padding:32px;">
+                    <div class="feature-icon" style="background:rgba(37,99,235,0.2);color:#60A5FA;"><i data-lucide="folder-tree" style="width:26px;height:26px;"></i></div>
+                    <h3 class="feature-title" style="font-size:1.25rem;">Multi-Client &amp; Project Scope</h3>
+                    <p class="feature-desc" style="margin-bottom:18px;">
+                        Organize fleets by customer, business unit, or project. Vault credentials and server telemetry are strictly isolated to authorized user scopes.
+                    </p>
+                    <div style="background:rgba(30,41,59,0.5);border:1px solid var(--border-glass);border-radius:10px;padding:16px;font-family:var(--font-mono);font-size:0.82rem;color:#CBD5E1;line-height:1.7;">
+                        <span style="color:#60A5FA;font-weight:700;">Project-Alpha</span><br>
+                        &nbsp;&nbsp;├── <span style="color:#F43F5E;">Production</span> (High Risk)<br>
+                        &nbsp;&nbsp;├── <span style="color:#F59E0B;">UAT</span> (Controlled Staging)<br>
+                        &nbsp;&nbsp;└── <span style="color:#10B981;">Development</span> (Low Risk)<br>
+                        <span style="color:#60A5FA;font-weight:700;">Project-Beta</span><br>
+                        &nbsp;&nbsp;├── <span style="color:#F43F5E;">Production</span> (High Risk)<br>
+                        &nbsp;&nbsp;├── <span style="color:#06B6D4;">QA</span> (Testing)<br>
+                        &nbsp;&nbsp;└── <span style="color:#F43F5E;">DR</span> (Disaster Recovery)
+                    </div>
+                </div>
+
+                <!-- Card 2: Environment-Aware Classification & Execution Safety -->
+                <div class="feature-card" style="background:rgba(15,23,42,0.6);border:1px solid rgba(255,255,255,0.08);padding:32px;">
+                    <div class="feature-icon" style="background:rgba(244,63,94,0.2);color:#FB7185;"><i data-lucide="shield-alert" style="width:26px;height:26px;"></i></div>
+                    <h3 class="feature-title" style="font-size:1.25rem;">Environment Classification &amp; Safety</h3>
+                    <p class="feature-desc" style="margin-bottom:18px;">
+                        Servers are categorized into five environment tiers (Production, UAT, QA, Dev, DR) to automatically enforce execution guardrails and risk boundaries:
+                    </p>
+                    <div style="display:flex;flex-direction:column;gap:8px;font-size:0.85rem;">
+                        <div style="background:rgba(30,41,59,0.5);padding:10px 14px;border-radius:8px;border-left:3px solid #F43F5E;display:flex;justify-content:space-between;align-items:center;">
+                            <span><code>10.0.10.50</code> → Project-Alpha → <strong>Production</strong></span>
+                            <span style="color:#F43F5E;font-weight:700;font-size:0.75rem;">HIGH RISK</span>
+                        </div>
+                        <div style="background:rgba(30,41,59,0.5);padding:10px 14px;border-radius:8px;border-left:3px solid #10B981;display:flex;justify-content:space-between;align-items:center;">
+                            <span><code>10.0.20.10</code> → Project-Alpha → <strong>Development</strong></span>
+                            <span style="color:#10B981;font-weight:700;font-size:0.75rem;">LOW RISK</span>
+                        </div>
+                        <div style="background:rgba(30,41,59,0.5);padding:10px 14px;border-radius:8px;border-left:3px solid #F43F5E;display:flex;justify-content:space-between;align-items:center;">
+                            <span><code>10.0.30.80</code> → Project-Beta → <strong>DR</strong></span>
+                            <span style="color:#F43F5E;font-weight:700;font-size:0.75rem;">HIGH RISK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2 Key Principles Banner Cards -->
+            <div class="grid-2" style="margin-bottom:48px;">
+                <!-- Principle 1: Environment-Aware Access Control -->
+                <div style="background:linear-gradient(145deg, rgba(15,23,42,0.85), rgba(30,41,59,0.4));border:1px solid rgba(245,158,11,0.3);border-radius:16px;padding:28px;">
+                    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+                        <i data-lucide="lock" style="width:20px;height:20px;color:#F59E0B;"></i>
+                        <h4 style="color:#F8FAFC;font-size:1.1rem;font-weight:700;margin:0;">Environment-Aware Access Control</h4>
+                    </div>
+                    <p style="color:#CBD5E1;font-size:0.9rem;line-height:1.65;margin:0;">
+                        <strong>Environment-Enforced Boundaries:</strong> Operators cannot execute commands or audits outside their assigned environment scope. Unauthorized attempts are rejected and immediately logged in the immutable audit trail.
+                    </p>
+                </div>
+
+                <!-- Principle 2: Scoped Scheduled Automation -->
+                <div style="background:linear-gradient(145deg, rgba(15,23,42,0.85), rgba(30,41,59,0.4));border:1px solid rgba(59,130,246,0.3);border-radius:16px;padding:28px;">
+                    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+                        <i data-lucide="calendar-check" style="width:20px;height:20px;color:#60A5FA;"></i>
+                        <h4 style="color:#F8FAFC;font-size:1.1rem;font-weight:700;margin:0;">Scoped Scheduled Automation</h4>
+                    </div>
+                    <p style="color:#CBD5E1;font-size:0.9rem;line-height:1.65;margin:0;">
+                        <strong>Runtime Auth Revalidation:</strong> Scheduled jobs verify active user permissions before firing. If an operator's production access is revoked, pending jobs are automatically blocked.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Backend Scope Isolation Callout -->
+            <div style="background:rgba(15,23,42,0.8);border:1px solid rgba(16,185,129,0.35);border-radius:16px;padding:32px;margin-bottom:48px;box-shadow:0 8px 30px rgba(0,0,0,0.3);">
+                <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
+                    <span style="background:rgba(16,185,129,0.15);color:#34D399;border:1px solid rgba(16,185,129,0.35);padding:4px 12px;border-radius:20px;font-size:0.78rem;font-weight:700;text-transform:uppercase;">Core Security Architecture</span>
+                    <h3 style="color:#F8FAFC;font-size:1.3rem;font-weight:800;margin:0;">Backend-Enforced Scope Isolation</h3>
+                </div>
+                <p style="color:#E2E8F0;font-size:0.95rem;line-height:1.7;margin-bottom:16px;">
+                    Project and environment boundaries are strictly enforced at the backend API layer across all routes—preventing unauthorized cross-project data access even if client-side UI filters are bypassed.
+                </p>
+                <div style="display:flex;flex-wrap:wrap;gap:8px;font-size:0.8rem;">
+                    <span style="background:rgba(30,41,59,0.8);border:1px solid var(--border-glass);padding:4px 10px;border-radius:6px;color:#94A3B8;">✔ Infrastructure Dashboard</span>
+                    <span style="background:rgba(30,41,59,0.8);border:1px solid var(--border-glass);padding:4px 10px;border-radius:6px;color:#94A3B8;">✔ Credential Vault</span>
+                    <span style="background:rgba(30,41,59,0.8);border:1px solid var(--border-glass);padding:4px 10px;border-radius:6px;color:#94A3B8;">✔ Remote SSH Executor</span>
+                    <span style="background:rgba(30,41,59,0.8);border:1px solid var(--border-glass);padding:4px 10px;border-radius:6px;color:#94A3B8;">✔ Automation Scheduler</span>
+                    <span style="background:rgba(30,41,59,0.8);border:1px solid var(--border-glass);padding:4px 10px;border-radius:6px;color:#94A3B8;">✔ Fleet Compliance Reports</span>
+                    <span style="background:rgba(30,41,59,0.8);border:1px solid var(--border-glass);padding:4px 10px;border-radius:6px;color:#94A3B8;">✔ Execution History</span>
+                </div>
+            </div>
+
+            <!-- 8-Card Feature Summary Grid -->
+            <div style="margin-top:20px;">
+                <h3 style="color:#F8FAFC;font-size:1.3rem;font-weight:800;text-align:center;margin-bottom:28px;">
+                    Enterprise Security &amp; Automation Feature Matrix
+                </h3>
+                <div class="grid-4" style="display:grid;grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:20px;">
+                    <!-- 1 -->
+                    <div style="background:rgba(15,23,42,0.6);border:1px solid var(--border-glass);border-radius:12px;padding:22px;">
+                        <div style="color:#60A5FA;margin-bottom:10px;"><i data-lucide="building" style="width:22px;height:22px;"></i></div>
+                        <h4 style="color:#F8FAFC;font-size:1rem;font-weight:700;margin-bottom:6px;">1. Multi-Client Management</h4>
+                        <p style="color:var(--text-muted);font-size:0.85rem;line-height:1.5;margin:0;">Organize infrastructure by customer, client, or project.</p>
+                    </div>
+                    <!-- 2 -->
+                    <div style="background:rgba(15,23,42,0.6);border:1px solid var(--border-glass);border-radius:12px;padding:22px;">
+                        <div style="color:#34D399;margin-bottom:10px;"><i data-lucide="layers" style="width:22px;height:22px;"></i></div>
+                        <h4 style="color:#F8FAFC;font-size:1rem;font-weight:700;margin-bottom:6px;">2. Environment Classification</h4>
+                        <p style="color:var(--text-muted);font-size:0.85rem;line-height:1.5;margin:0;">Classify servers as Production, UAT, QA, Development, or DR.</p>
+                    </div>
+                    <!-- 3 -->
+                    <div style="background:rgba(15,23,42,0.6);border:1px solid var(--border-glass);border-radius:12px;padding:22px;">
+                        <div style="color:#F59E0B;margin-bottom:10px;"><i data-lucide="terminal" style="width:22px;height:22px;"></i></div>
+                        <h4 style="color:#F8FAFC;font-size:1rem;font-weight:700;margin-bottom:6px;">3. Scoped Remote Execution</h4>
+                        <p style="color:var(--text-muted);font-size:0.85rem;line-height:1.5;margin:0;">Enforce project and environment permissions during SSH operations.</p>
+                    </div>
+                    <!-- 4 -->
+                    <div style="background:rgba(15,23,42,0.6);border:1px solid var(--border-glass);border-radius:12px;padding:22px;">
+                        <div style="color:#60A5FA;margin-bottom:10px;"><i data-lucide="clock" style="width:22px;height:22px;"></i></div>
+                        <h4 style="color:#F8FAFC;font-size:1rem;font-weight:700;margin-bottom:6px;">4. Secure Automation</h4>
+                        <p style="color:var(--text-muted);font-size:0.85rem;line-height:1.5;margin:0;">Revalidate authorization before scheduled jobs execute.</p>
+                    </div>
+                    <!-- 5 -->
+                    <div style="background:rgba(15,23,42,0.6);border:1px solid var(--border-glass);border-radius:12px;padding:22px;">
+                        <div style="color:#A78BFA;margin-bottom:10px;"><i data-lucide="file-check" style="width:22px;height:22px;"></i></div>
+                        <h4 style="color:#F8FAFC;font-size:1rem;font-weight:700;margin-bottom:6px;">5. Fleet Compliance</h4>
+                        <p style="color:var(--text-muted);font-size:0.85rem;line-height:1.5;margin:0;">Apply project/environment scope to fleet health and compliance reporting.</p>
+                    </div>
+                    <!-- 6 -->
+                    <div style="background:rgba(15,23,42,0.6);border:1px solid var(--border-glass);border-radius:12px;padding:22px;">
+                        <div style="color:#34D399;margin-bottom:10px;"><i data-lucide="shield" style="width:22px;height:22px;"></i></div>
+                        <h4 style="color:#F8FAFC;font-size:1rem;font-weight:700;margin-bottom:6px;">6. Backend Scope Isolation</h4>
+                        <p style="color:var(--text-muted);font-size:0.85rem;line-height:1.5;margin:0;">Enforce authorization at the API/data layer, not just through UI filters.</p>
+                    </div>
+                    <!-- 7 -->
+                    <div style="background:rgba(15,23,42,0.6);border:1px solid var(--border-glass);border-radius:12px;padding:22px;">
+                        <div style="color:#F43F5E;margin-bottom:10px;"><i data-lucide="history" style="width:22px;height:22px;"></i></div>
+                        <h4 style="color:#F8FAFC;font-size:1rem;font-weight:700;margin-bottom:6px;">7. Audit &amp; Attribution</h4>
+                        <p style="color:var(--text-muted);font-size:0.85rem;line-height:1.5;margin:0;">Record security-sensitive execution and authorization events.</p>
+                    </div>
+                    <!-- 8 -->
+                    <div style="background:rgba(15,23,42,0.6);border:1px solid var(--border-glass);border-radius:12px;padding:22px;">
+                        <div style="color:#FB7185;margin-bottom:10px;"><i data-lucide="alert-triangle" style="width:22px;height:22px;"></i></div>
+                        <h4 style="color:#F8FAFC;font-size:1rem;font-weight:700;margin-bottom:6px;">8. Risk-Aware Execution</h4>
+                        <p style="color:var(--text-muted);font-size:0.85rem;line-height:1.5;margin:0;">Apply stronger guardrails to Production and DR operations.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Supported Operating Systems Section -->
+    <section id="supported-os" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Universal Compatibility</span>
+                <h2 class="section-title">Supported Operating Systems (100% OS-Independent)</h2>
+                <p class="section-desc">Works out-of-the-box across legacy and modern enterprise Linux distributions using standard POSIX-compliant core utilities. No third-party dependencies required on client servers.</p>
+            </div>
+
+            <div class="os-grid">
+                <!-- RHEL -->
+                <div class="os-card">
+                    <div class="os-logo-box">
+                        <img src="assets/os-logos/rhel.png" alt="RHEL" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <i data-lucide="server" style="display:none;width:24px;height:24px;color:#EF4444;"></i>
+                    </div>
+                    <div class="os-info">
+                        <h4>RHEL / CentOS</h4>
+                        <span>Red Hat Enterprise Linux 6.x – 10.x</span>
+                    </div>
+                </div>
+
+                <!-- Ubuntu -->
+                <div class="os-card">
+                    <div class="os-logo-box">
+                        <img src="assets/os-logos/ubuntu.png" alt="Ubuntu" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <i data-lucide="server" style="display:none;width:24px;height:24px;color:#F97316;"></i>
+                    </div>
+                    <div class="os-info">
+                        <h4>Ubuntu LTS</h4>
+                        <span>Ubuntu 16.04 – 26.04 LTS</span>
+                    </div>
+                </div>
+
+                <!-- Rocky Linux -->
+                <div class="os-card">
+                    <div class="os-logo-box">
+                        <img src="assets/os-logos/rocky.png" alt="Rocky Linux" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <i data-lucide="server" style="display:none;width:24px;height:24px;color:#10B981;"></i>
+                    </div>
+                    <div class="os-info">
+                        <h4>Rocky Linux</h4>
+                        <span>Rocky 8.x – 9.x</span>
+                    </div>
+                </div>
+
+                <!-- AlmaLinux -->
+                <div class="os-card">
+                    <div class="os-logo-box">
+                        <img src="assets/os-logos/alma.png" alt="AlmaLinux" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <i data-lucide="server" style="display:none;width:24px;height:24px;color:#06B6D4;"></i>
+                    </div>
+                    <div class="os-info">
+                        <h4>AlmaLinux</h4>
+                        <span>AlmaLinux 8.x – 9.x</span>
+                    </div>
+                </div>
+
+                <!-- Oracle Linux -->
+                <div class="os-card">
+                    <div class="os-logo-box">
+                        <img src="assets/os-logos/oracle.png" alt="Oracle Linux" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <i data-lucide="server" style="display:none;width:24px;height:24px;color:#F59E0B;"></i>
+                    </div>
+                    <div class="os-info">
+                        <h4>Oracle Linux</h4>
+                        <span>Oracle Linux 6.x – 10.x</span>
+                    </div>
+                </div>
+
+                <!-- Amazon Linux -->
+                <div class="os-card">
+                    <div class="os-logo-box">
+                        <img src="assets/os-logos/amazon.png" alt="Amazon Linux" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <i data-lucide="server" style="display:none;width:24px;height:24px;color:#8B5CF6;"></i>
+                    </div>
+                    <div class="os-info">
+                        <h4>Amazon Linux</h4>
+                        <span>Amazon Linux 2 &amp; AL2023</span>
+                    </div>
+                </div>
+
+                <!-- Debian -->
+                <div class="os-card">
+                    <div class="os-logo-box">
+                        <img src="assets/os-logos/debian.png" alt="Debian" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <i data-lucide="server" style="display:none;width:24px;height:24px;color:#EC4899;"></i>
+                    </div>
+                    <div class="os-info">
+                        <h4>Debian GNU/Linux</h4>
+                        <span>Debian 9 (Stretch) – 13 (Trixie)</span>
+                    </div>
+                </div>
+
+                <!-- SUSE -->
+                <div class="os-card">
+                    <div class="os-logo-box">
+                        <img src="assets/os-logos/suse.png" alt="SUSE SLES" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <i data-lucide="server" style="display:none;width:24px;height:24px;color:#10B981;"></i>
+                    </div>
+                    <div class="os-info">
+                        <h4>SUSE SLES</h4>
+                        <span>SLES 12 – 15 SP6</span>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align:center;margin-top:24px;font-size:0.88rem;color:var(--text-muted);">
+                <i data-lucide="info" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;"></i>
+                Uses standard POSIX shell utilities (<code>bash</code>, <code>awk</code>, <code>sed</code>, <code>grep</code>, <code>df</code>, <code>free</code>, <code>uname</code>) — no additional packages needed on client servers.
+            </div>
+        </div>
+    </section>
+
+    <!-- Master Application Installation Steps Section -->
+    <section id="installation" class="section" style="background: rgba(15, 23, 42, 0.4); border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Deployment Guide</span>
+                <h2 class="section-title">Deploy InfraSightOps in Under 3 Minutes</h2>
+                <p class="section-desc">Single-command, self-extracting installer. No Docker, no Kubernetes, no cloud dependency. Runs directly on bare-metal or VM Linux servers.</p>
+            </div>
+
+            <!-- Install Step Tabs -->
+            <div class="install-tabs">
+                <button class="tab-btn active" data-tab="tab-master">1. Master Application Setup</button>
+                <button class="tab-btn" data-tab="tab-agent">2. Client Agent Deployment</button>
+                <button class="tab-btn" data-tab="tab-cron">3. Automated Cron Schedule</button>
+                <button class="tab-btn" data-tab="tab-remote">4. Remote SSH Push (New)</button>
+            </div>
+
+            <!-- Tab 1: Master Setup -->
+            <div id="tab-master" class="install-box tab-content">
+                <h3 style="font-size:1.15rem;font-weight:700;margin-bottom:8px;color:#F8FAFC;">Step 1: Install InfraSightOps Master Application</h3>
+                <p style="color:var(--text-muted);font-size:0.95rem;margin-bottom:16px;">Download and run the self-extracting installer as root on your designated Master Linux Server:</p>
+                <div class="code-block">
+                    <code>chmod +x infrasightops-installer.run &amp;&amp; sudo ./infrasightops-installer.run</code>
+                    <button class="copy-btn">Copy</button>
+                </div>
+                <div class="output-info" style="margin-top:16px;font-size:0.85rem;line-height:1.8;">
+                    ✔ Self-extracting closed-source application bundle (<code>infrasightops-installer.run</code>).<br>
+                    ✔ Auto-installs Nginx reverse proxy, Gunicorn WSGI server, Python virtualenv at <code>/opt/infrasightops</code>.<br>
+                    ✔ Installs <code>paramiko</code> for Remote SSH Executor module support.<br>
+                    ✔ Registers <code>infrasightops.service</code> as a <code>systemd</code> daemon with auto-start on reboot.<br>
+                    ✔ Web UI accessible immediately at: <strong>http://&lt;MASTER_IP&gt;:8088</strong>
+                </div>
+            </div>
+
+            <!-- Tab 2: Agent Setup -->
+            <div id="tab-agent" class="install-box tab-content" style="display:none;">
+                <h3 style="font-size:1.15rem;font-weight:700;margin-bottom:8px;color:#F8FAFC;">Step 2: Deploy Client Agent on Target Servers</h3>
+                <p style="color:var(--text-muted);font-size:0.95rem;margin-bottom:16px;">Copy and run the standalone agent binary on any Linux client server (RHEL, Ubuntu, Debian, Oracle, SUSE, Amazon Linux):</p>
+                <div class="code-block">
+                    <code>sudo ./infrasightops-agent</code>
+                    <button class="copy-btn">Copy</button>
+                </div>
+                <div class="output-info" style="margin-top:16px;font-size:0.85rem;line-height:1.8;">
+                    ✔ Ships as a pre-compiled binary — source code is completely hidden from client server operators.<br>
+                    ✔ Prompts for Master Server IP/URL on first run; saves config to <code>/etc/infrasightops-agent.conf</code>.<br>
+                    ✔ Performs full health scan and uploads HTML, TXT, and JSON reports to Master.<br>
+                    ✔ Subsequent runs use saved config automatically (no re-prompting). Ideal for unattended cron execution.
+                </div>
+            </div>
+
+            <!-- Tab 3: Cron Schedule -->
+            <div id="tab-cron" class="install-box tab-content" style="display:none;">
+                <h3 style="font-size:1.15rem;font-weight:700;margin-bottom:8px;color:#F8FAFC;">Step 3: Schedule Automated Periodic Health Scans</h3>
+                <p style="color:var(--text-muted);font-size:0.95rem;margin-bottom:16px;">Add to root's crontab to schedule automatic daily health scans at 2:00 AM:</p>
+                <div class="code-block">
+                    <code>0 2 * * * /usr/local/bin/infrasightops-agent &gt;/dev/null 2&gt;&amp;1</code>
+                    <button class="copy-btn">Copy</button>
+                </div>
+                <div class="output-info" style="margin-top:16px;font-size:0.85rem;line-height:1.8;">
+                    ✔ Reports upload automatically to the Master dashboard — no manual intervention needed.<br>
+                    ✔ Adjust schedule frequency as needed: hourly, daily, weekly, or post-maintenance window.<br>
+                    ✔ Set multiple cron entries to capture pre-maintenance and post-maintenance snapshots for drift detection.
+                </div>
+            </div>
+
+            <!-- Tab 4: Remote Push & Orchestrator -->
+            <div id="tab-remote" class="install-box tab-content" style="display:none;">
+                <h3 style="font-size:1.15rem;font-weight:700;margin-bottom:8px;color:#F8FAFC;">Step 4: Remote SSH Executor, Web Terminal &amp; Multi-Server Orchestrator</h3>
+                <p style="color:var(--text-muted);font-size:0.95rem;margin-bottom:16px;">Directly from the web UI, audit, manage, and execute automated pipelines across your Linux fleet:</p>
+                <div class="output-info" style="font-size:0.85rem;line-height:1.8;">
+                    ✔ <strong>1-Click Health Check Push:</strong> Push and execute <code>health_check.sh</code> on target servers via password or SSH private key with live terminal streaming.<br>
+                    ✔ <strong>Interactive Web SSH Terminal:</strong> Direct browser-based SSH terminal with real-time output, command history, and seamless sudo root switching.<br>
+                    ✔ <strong>Multi-Server Orchestrator:</strong> Run bulk multi-line bash scripts across hundreds of servers with <strong>Rolling Serial (1-by-1)</strong> or <strong>Parallel Concurrent</strong> strategies.<br>
+                    ✔ <strong>Automated Verification Pipelines:</strong> Run Precheck, Main Command, and Postcheck stages with side-by-side diff matrix and <em>Stop on first failure</em> protection.<br>
+                    ✔ <strong>Secure Encrypted Vault:</strong> Store SSH credentials and private keys locally with automatic host-matching and commercial capacity governance.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing & Licensing Section -->
+    <section id="pricing" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Fair &amp; Transparent Licensing</span>
+                <h2 class="section-title">Affordable Commercial Licensing for Every Team Size</h2>
+                <p class="section-desc">Free forever for small clusters up to 10 servers. Flat annual pricing for MSPs, enterprise projects, and large data centers — no per-node monthly billing.</p>
+            </div>
+
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:24px;">
+                <!-- Free Tier -->
+                <div class="pricing-card" style="background:var(--bg-glass);border:1px solid var(--border-glass);border-radius:16px;padding:28px;text-align:center;">
+                    <h3 style="font-size:1.2rem;font-weight:700;color:#F8FAFC;">Community Edition</h3>
+                    <div style="font-size:2.2rem;font-weight:800;color:#3B82F6;margin:14px 0 6px 0;">$0 <span style="font-size:0.9rem;color:var(--text-muted);font-weight:400;">/ Forever Free</span></div>
+                    <p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:20px;">Ideal for home labs, initial evaluations, and small server clusters.</p>
+                    <ul style="text-align:left;list-style:none;padding:0;margin-bottom:28px;display:flex;flex-direction:column;gap:10px;font-size:0.85rem;color:#CBD5E1;">
+                        <li>✔ Up to 10 Server Nodes</li>
+                        <li>✔ Full Monitoring, Drift &amp; Security Engine</li>
+                        <li>✔ Unlimited Report History</li>
+                        <li>✔ 100% Offline Air-Gapped Ready</li>
+                        <li>✔ Remote SSH Executor &amp; Web Terminal</li>
+                    </ul>
+                    <a href="#installation" class="btn btn-outline" style="width:100%;">Get Started Free</a>
+                </div>
+
+                <!-- Professional Tier -->
+                <div class="pricing-card" style="background:var(--bg-glass);border:2px solid #1754D1;border-radius:16px;padding:28px;text-align:center;box-shadow:0 8px 30px rgba(23,84,209,0.25);">
+                    <div style="background:#1754D1;color:#fff;font-size:0.75rem;font-weight:700;padding:4px 16px;border-radius:20px;text-transform:uppercase;display:inline-block;margin-bottom:8px;">Most Popular</div>
+                    <h3 style="font-size:1.2rem;font-weight:700;color:#F8FAFC;">Professional / MSP</h3>
+                    <div style="font-size:2.2rem;font-weight:800;color:#60A5FA;margin:14px 0 6px 0;">$49 <span style="font-size:0.9rem;color:var(--text-muted);font-weight:400;">/ Year</span></div>
+                    <p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:20px;">Perfect for growing infrastructure teams &amp; MSP project environments.</p>
+                    <ul style="text-align:left;list-style:none;padding:0;margin-bottom:28px;display:flex;flex-direction:column;gap:10px;font-size:0.85rem;color:#CBD5E1;">
+                        <li>✔ Up to 50 Server Nodes</li>
+                        <li>✔ Multi-Tenant MSP Scope Filter</li>
+                        <li>✔ Multi-Server Orchestrator (Parallel &amp; Serial)</li>
+                        <li>✔ Encrypted Credential Vault</li>
+                        <li>✔ Custom Client Name Branding</li>
+                        <li>✔ Signed Cryptographic License Key</li>
+                        <li>✔ Email Support &amp; Bug Fix Priority</li>
+                    </ul>
+                    <button type="button" onclick="sendLicenseRequest('pro')" class="btn btn-primary" style="width:100%;">Request License Key</button>
+                </div>
+
+                <!-- Enterprise Tier -->
+                <div class="pricing-card" style="background:var(--bg-glass);border:1px solid var(--border-glass);border-radius:16px;padding:28px;text-align:center;">
+                    <h3 style="font-size:1.2rem;font-weight:700;color:#F8FAFC;">Enterprise Edition</h3>
+                    <div style="font-size:2.2rem;font-weight:800;color:#10B981;margin:14px 0 6px 0;">$149 <span style="font-size:0.9rem;color:var(--text-muted);font-weight:400;">/ Year</span></div>
+                    <p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:20px;">For mission-critical data centers &amp; multi-project enterprise deployments.</p>
+                    <ul style="text-align:left;list-style:none;padding:0;margin-bottom:28px;display:flex;flex-direction:column;gap:10px;font-size:0.85rem;color:#CBD5E1;">
+                        <li>✔ Up to 250 Server Nodes</li>
+                        <li>✔ Unlimited Orchestrator Pipelines</li>
+                        <li>✔ Hardware Machine-ID Lock Binding</li>
+                        <li>✔ Multi-Project Scope Authorization</li>
+                        <li>✔ Custom Logo &amp; Full White-Labeling</li>
+                        <li>✔ Priority Technical Support (48h SLA)</li>
+                        <li>✔ Official Tax Invoice (GST/VAT)</li>
+                    </ul>
+                    <button type="button" onclick="sendLicenseRequest('enterprise')" class="btn btn-primary" style="width:100%;">Contact Licensing Team</button>
+                </div>
+
+                <!-- Custom Requirements Tier -->
+                <div class="pricing-card" style="background:var(--bg-glass);border:1px solid rgba(244,63,94,0.4);border-radius:16px;padding:28px;text-align:center;">
+                    <h3 style="font-size:1.2rem;font-weight:700;color:#F8FAFC;">Custom / Government</h3>
+                    <div style="font-size:2.2rem;font-weight:800;color:#F43F5E;margin:14px 0 6px 0;">Custom <span style="font-size:0.9rem;color:var(--text-muted);font-weight:400;">Quote</span></div>
+                    <p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:20px;">For custom SLA, unlimited nodes, air-gapped key servers, or bespoke compliance rules.</p>
+                    <ul style="text-align:left;list-style:none;padding:0;margin-bottom:28px;display:flex;flex-direction:column;gap:10px;font-size:0.85rem;color:#CBD5E1;">
+                        <li>✔ Unlimited Node Count (500 – 10,000+ Hosts)</li>
+                        <li>✔ Tailored OS Compliance &amp; CIS Hardening</li>
+                        <li>✔ Dedicated On-Premises Air-Gapped Key Server</li>
+                        <li>✔ 24/7 Dedicated Support &amp; SLA Agreement</li>
+                        <li>✔ Bank Wire Transfer &amp; PO Reference Support</li>
+                        <li>✔ Government / Defense Procurement Ready</li>
+                    </ul>
+                    <button type="button" onclick="sendLicenseRequest('custom')" class="btn btn-outline" style="width:100%;border-color:#F43F5E;color:#F43F5E;">Get Custom Quote</button>
+                </div>
+            </div>
+
+            <p style="text-align:center;color:var(--text-muted);font-size:0.85rem;margin-top:24px;">
+                <i data-lucide="shield-check" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;color:#10B981;"></i>
+                All commercial licenses include a <strong>14-day grace period</strong> after expiration. All historical scan data remains permanently accessible regardless of license status.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Got Questions?</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-desc">Everything you need to know about licensing, deployment, offline execution, security, orchestrator, and support.</p>
+            </div>
+
+            <div class="faq-grid">
+                <!-- FAQ 1 -->
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        <span>Does license validation work on offline / air-gapped Master Servers?</span>
+                        <i data-lucide="chevron-down" style="width:18px;height:18px;"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>Yes, 100%.</strong> Validation runs locally using cryptographic HMAC signatures with zero external API calls or phone-home pings. It operates reliably in classified networks, isolated VPCs, and secure air-gapped data centers.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How does the Multi-Server Orchestrator work compared to Ansible or SaltStack?</span>
+                        <i data-lucide="chevron-down" style="width:18px;height:18px;"></i>
+                    </div>
+                    <div class="faq-answer">
+                        InfraSightOps requires <strong>no client agents and no Python dependencies</strong>. Execute multi-line scripts across fleets with concurrent parallel or rolling serial modes and automated stop-on-failure safety checks directly from the browser.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can client servers upload reports over a Private IP without internet access?</span>
+                        <i data-lucide="chevron-down" style="width:18px;height:18px;"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>Yes.</strong> Nodes post scan telemetry directly to the Master Server's Private IP (e.g., <code>http://10.0.27.53:8088/upload</code>) via standard <code>curl</code>. No public IP or internet routing is required.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Are stored SSH passwords and private keys secure in the Credential Vault?</span>
+                        <i data-lucide="chevron-down" style="width:18px;height:18px;"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>Yes.</strong> All credentials and SSH keys (RSA/ED25519) are AES-encrypted in a local database on the Master server. They are never exported or transmitted externally, and access is enforced by strict RBAC policies.
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What happens when a commercial license reaches its expiration date?</span>
+                        <i data-lucide="chevron-down" style="width:18px;height:18px;"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Your instance enters a <strong>14-day grace period</strong> with full scanning capability. Afterward, upload capacity reverts to the 10-node Community limit. <strong>All historical scan reports and diffs remain permanently accessible.</strong>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Does the client agent run continuously as a background daemon?</span>
+                        <i data-lucide="chevron-down" style="width:18px;height:18px;"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>No.</strong> The agent is a lightweight on-demand binary that executes and terminates immediately. It consumes <strong>0% RAM and 0% CPU when idle</strong>, leaving no background daemons or open listening ports.
+                    </div>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How does client organization and project scope binding work in licenses?</span>
+                        <i data-lucide="chevron-down" style="width:18px;height:18px;"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Licenses are digitally signed for your specific <strong>Organization Name</strong>, <strong>Project Scope</strong>, and optional Master <code>machine-id</code>, ensuring strict compliance and preventing unauthorized deployment transfer.
+                    </div>
+                </div>
+
+                <!-- FAQ 8 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Will reinstalling or upgrading InfraSightOps remove my existing license?</span>
+                        <i data-lucide="chevron-down" style="width:18px;height:18px;"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>No.</strong> The installer automatically preserves your commercial license key, database, and historical reports across upgrades. Running <code>./infrasightops-installer.run</code> is safe to repeat without data loss.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Licensing & Commercial Contact Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-brand">InfraSightOps — Enterprise Linux Health Dashboard</div>
+
+            <!-- License Request & Corporate Invoicing Box -->
+            <div style="background:rgba(15,23,42,0.7);border:1px solid rgba(23,84,209,0.35);border-radius:16px;padding:28px;margin:28px 0;text-align:left;box-shadow:0 8px 30px rgba(0,0,0,0.3);">
+                <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:16px;">
+                    <h4 style="color:#F8FAFC;font-size:1.15rem;font-weight:700;display:flex;align-items:center;gap:8px;margin:0;">
+                        <i data-lucide="key-round" style="color:#60A5FA;width:22px;height:22px;"></i> License Key Request &amp; Corporate Invoicing
+                    </h4>
+                    <span style="background:rgba(16,185,129,0.15);color:#34D399;border:1px solid rgba(16,185,129,0.3);padding:4px 12px;border-radius:20px;font-size:0.8rem;font-weight:600;">
+                        🧾 Official Tax Invoice &amp; GST / VAT Bill Provided
+                    </span>
+                </div>
+
+                <p style="color:var(--text-muted);font-size:0.92rem;margin-bottom:20px;line-height:1.6;">
+                    Commercial license keys are cryptographically signed and bound to your organization name, project scope, and optional server Machine ID. Send your request with the details below — our licensing team will issue your key and official corporate tax invoice within 1 business day:
+                </p>
+
+                <!-- 4 Requirements Grid -->
+                <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(210px, 1fr));gap:14px;background:rgba(30,41,59,0.6);padding:18px;border-radius:12px;border:1px solid var(--border-glass);margin-bottom:20px;">
+                    <div><strong style="color:#60A5FA;">1. 🏢 Client / Org Name:</strong><br><span style="font-size:0.85rem;color:var(--text-dim);">e.g., Acme Corporation Pvt. Ltd.</span></div>
+                    <div><strong style="color:#60A5FA;">2. 📁 Project Scope:</strong><br><span style="font-size:0.85rem;color:var(--text-dim);">e.g., Payment Gateway / All Projects</span></div>
+                    <div><strong style="color:#60A5FA;">3. 🖥️ Max Server Count:</strong><br><span style="font-size:0.85rem;color:var(--text-dim);">e.g., 50, 100, 250, 500+</span></div>
+                    <div><strong style="color:#60A5FA;">4. 🔑 Master Machine ID:</strong><br><span style="font-size:0.85rem;color:var(--text-dim);"><code>cat /etc/machine-id</code> or via Settings UI</span></div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;">
+                    <button type="button" onclick="sendViaGmail()" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;padding:12px 22px;font-size:0.92rem;background:linear-gradient(135deg, #EA4335 0%, #D93025 100%);box-shadow:0 4px 20px rgba(234,67,53,0.35);">
+                        <i data-lucide="mail" style="width:18px;height:18px;"></i> Send Request via Gmail
+                    </button>
+
+                    <button type="button" onclick="sendViaOutlook()" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;padding:12px 22px;font-size:0.92rem;background:linear-gradient(135deg, #0078D4 0%, #005A9E 100%);box-shadow:0 4px 20px rgba(0,120,212,0.35);">
+                        <i data-lucide="mail" style="width:18px;height:18px;"></i> Send Request via Outlook
+                    </button>
+
+                    <button type="button" onclick="copyLicenseTemplate()" class="btn btn-outline" style="display:inline-flex;align-items:center;gap:8px;padding:12px 18px;font-size:0.92rem;">
+                        <i data-lucide="copy" style="width:18px;height:18px;"></i> Copy Request Template
+                    </button>
+                </div>
+
+                <!-- Invoicing Note -->
+                <div style="margin-top:16px;font-size:0.85rem;color:var(--text-muted);display:flex;align-items:flex-start;gap:8px;line-height:1.5;">
+                    <i data-lucide="file-check-2" style="color:#10B981;width:16px;height:16px;flex-shrink:0;margin-top:2px;"></i>
+                    <span>Official signed cryptographic license keys (<code>license.key</code>) are issued directly by the engineering team with full support for bank wire transfer, PO references, and corporate procurement audits. Typical turnaround: <strong style="color:#34D399;">1 business day.</strong></span>
+                </div>
+            </div>
+
+            <p class="footer-contact">
+                Direct Contact &amp; Licensing Support:<br>
+                <strong>Enterprise Solutions &amp; Licensing Team</strong> &nbsp;|&nbsp;
+                <strong>Email:</strong> <a href="mailto:prathaps8675@gmail.com">prathaps8675@gmail.com</a> &nbsp;|&nbsp;
+                <strong>Response Time:</strong> Within 1 Business Day
+            </p>
+            <div class="copyright">
+                InfraSightOps — Enterprise Linux Health Dashboard &copy; 2026 &nbsp;|&nbsp; Enterprise Solutions &amp; Licensing Team &nbsp;|&nbsp; All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
