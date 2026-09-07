@@ -42,6 +42,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 90px;
   font-family: var(--font-main);
   background-color: var(--bg-dark);
   color: var(--text-main);
@@ -312,8 +313,9 @@ body {
 .output-success { color: #34D399; }
 .output-info { color: #94A3B8; }
 
-.section {
+.section, section[id], [id] {
   padding: 50px 0;
+  scroll-margin-top: 90px;
 }
 
 .section-header {

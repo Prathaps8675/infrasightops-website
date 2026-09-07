@@ -54,7 +54,9 @@ function launchSuperdemo(event) {
     }
 
     if (demoSection) {
-        demoSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        const yOffset = -90;
+        const y = demoSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: "smooth" });
     }
 }
 
@@ -160,12 +162,28 @@ document.addEventListener("DOMContentLoaded", function () {
         btn.addEventListener("click", launchSuperdemo);
     });
 
-    // Close mobile nav when clicking any nav link
+    // Close mobile nav when clicking any nav link & handle navbar scroll offset
     const navLinks = document.querySelectorAll(".nav-links a");
     navLinks.forEach((link) => {
-        link.addEventListener("click", () => {
+        link.addEventListener("click", (e) => {
             const menu = document.querySelector(".nav-links");
             if (menu) menu.classList.remove("mobile-open");
+
+            const targetId = link.getAttribute("href");
+            if (targetId && targetId.startsWith("#") && targetId !== "#") {
+                const targetEl = document.querySelector(targetId);
+                if (targetEl) {
+                    e.preventDefault();
+                    const yOffset = -90;
+                    const y = targetEl.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                    window.scrollTo({ top: y, behavior: "smooth" });
+                    if (history.pushState) {
+                        history.pushState(null, null, targetId);
+                    } else {
+                        location.hash = targetId;
+                    }
+                }
+            }
         });
     });
 
